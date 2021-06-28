@@ -1,0 +1,9 @@
+C:\Users\Administratorold\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+C:\Program Files\eclipse\dsl-2021-03\eclipse\eclipse.exe
+
+C:\Program Files\MySQL\MySQL Workbench 8.0 CE\MySQLWorkbench.exe
+
+C:\Program Files\Atlassian\Jira\Launch Jira in browser
+
+http://localhost:8080/

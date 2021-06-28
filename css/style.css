@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+}
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.sidebar {
+  position: fixed;
+  min-width: 250px;
+  overflow-y: auto;
+  top: 56px;
+  bottom: 0;
+  background-color: aliceblue;
+  min-height: calc(100vh-56px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-link {
+  display: flex;
+  color: rgb(1, 88, 146);
+  width: 100%;
+  padding: 10px;
+  margin: 0 !important;
+}
+
+.sidebar-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 88, 146);
+}
+
+.sidebar-link span:first-child {
+  margin-left: 15px;
+}
+.sidebar-link span:last-child {
+  margin: 0 15px;
+}
+
+.content {
+  margin-left: 250px;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .sidebar {
+    min-width: 0;
+  }
+  .content {
+    margin-left: 60px;
+  }
+  .sidebar-link {
+    justify-content: center;
+  }
+  .sidebar-link span:first-child {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+}
+
+/* Temporary, remove when content is added */
+.sourcing,
+.training,
+.placement {
+  border: 2px solid black;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+}
+.quickpl,
+.clientlist,
+.resourcecontent,
+.breif {
+  border: 2px solid black;
+  min-height: 200px;
+  margin: 25px 0;
+  display: grid;
+  place-items: center;
+}
+.quicklinks {
+  border: 2px solid black;
+  margin-right: 15px;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 15px;
+}
+.quicklinks a {
+  color: black;
+  text-decoration: none;
+}
+
+.login-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.login-container div:nth-child(1) {
+  width: 100%;
+  max-width: 450px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.cmtop{
+  margin-top: 8px;
+}
