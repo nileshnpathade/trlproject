@@ -23,4 +23,5 @@ if(!empty($email) && !empty($password)){
 	header('location:login.php?message='.$message);
 	die;
 }
+
 ?>
